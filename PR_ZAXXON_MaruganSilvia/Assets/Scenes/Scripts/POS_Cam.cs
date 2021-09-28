@@ -7,7 +7,7 @@ public class POS_Cam : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] Transform PlayerPOS;
     [SerializeField] float DistanciaPLayer = 10f;
-    [SerializeField] float AlturaCAM = 3.5f;
+    [SerializeField] float AlturaCAM = 10f;
 
     Vector3 CamPOS;
 
@@ -24,7 +24,7 @@ public class POS_Cam : MonoBehaviour
 
         float newPosY = PlayerPOS.position.y + AlturaCAM;
         float newPosZ = PlayerPOS.position.z - DistanciaPLayer;
-        transform.LookAt(PlayerPOS);
+       
       
         transform.position = CamPOS = new Vector3(0f, newPosY, newPosZ);
     }
