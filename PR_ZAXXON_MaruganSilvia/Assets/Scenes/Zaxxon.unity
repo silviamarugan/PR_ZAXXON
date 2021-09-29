@@ -786,9 +786,9 @@ Camera:
   m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_SensorSize: {x: 80, y: 25.59}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 20
+  m_SensorSize: {x: 70, y: 51}
+  m_LensShift: {x: 0, y: -0.15}
+  m_FocalLength: 35
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -797,7 +797,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 65.21816
+  field of view: 72.15202
   orthographic: 0
   orthographic size: 5
   m_Depth: 80
@@ -841,9 +841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c44dbf07dc648cf44b3c6fb8c1465070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPOS: {fileID: 693008813}
-  DistanciaPLayer: 10
-  AlturaCAM: 3.5
+  playerPos: {fileID: 693008813}
+  smoothVelocity: 0.3
+  camaraVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &1199559478
 GameObject:
   m_ObjectHideFlags: 0
