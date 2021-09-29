@@ -40,7 +40,7 @@ public class MOV_Nave : MonoBehaviour
 
 
 
-        //DASH
+        //DASH (input en "SPACE" y "X" de mando)
         bool dash = false;
         if (Input.GetKey(KeyCode.Space))
         {
@@ -53,23 +53,23 @@ public class MOV_Nave : MonoBehaviour
             }
 
         }
-        //FIN DASH
+        //FIN DASH 
 
-        //ESCUDO
+        //ESCUDO (input en "CTRL" y "Y" de mando)
         if (Input.GetKey(KeyCode.LeftControl))
         {
             print("Invencibility");
         }
         //FIN ESCUDO
 
-        //CURA
+        //CURA (input en "ALT" y "A" de mando)
         if (Input.GetKey(KeyCode.LeftAlt))
         {
             print("HealthUP");
         }
         //FIN CURA
 
-        //SLOW
+        //SLOW (input en "CTRL" y "B" de mando)
         bool slow = false;
        
         if (Input.GetKey(KeyCode.LeftShift))
