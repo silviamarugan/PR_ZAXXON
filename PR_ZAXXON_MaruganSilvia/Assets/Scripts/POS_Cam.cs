@@ -6,14 +6,14 @@ public class POS_Cam : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    //VARIABLES ANTIGUAS
+                                    //VARIABLES ANTIGUAS
 
-    /*  [SerializeField] Transform PlayerPOS;
-      [SerializeField] float DistanciaPLayer = 10f;
-      [SerializeField] float AlturaCAM = 5f; 
-       Vector3 CamPOS; */
+                                    /*  [SerializeField] Transform PlayerPOS;
+                                      [SerializeField] float DistanciaPLayer = 10f;
+                                      [SerializeField] float AlturaCAM = 5f; 
+                                       Vector3 CamPOS; */
 
-    //FIN VARIABLES ANTIGUAS
+                                    //FIN VARIABLES ANTIGUAS
 
     [SerializeField] Transform playerPos;
     float AlturaCAM = 3f;
@@ -29,14 +29,14 @@ public class POS_Cam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CODIGO ANTIGUO
+                                    //CODIGO ANTIGUO
 
-        /* float newPosY = PlayerPOS.position.y + AlturaCAM;
-       float newPosZ = PlayerPOS.position.z - DistanciaPLayer;
+                                    /* float newPosY = PlayerPOS.position.y + AlturaCAM;
+                                   float newPosZ = PlayerPOS.position.z - DistanciaPLayer;
 
 
-       transform.position = CamPOS = new Vector3(0f, newPosY, newPosZ); */
-        //FIN CODIGO ANTIGUO
+                                   transform.position = CamPOS = new Vector3(0f, newPosY, newPosZ); */
+                                    //FIN CODIGO ANTIGUO
 
         //SEGUIMIENTO CAMARA
         float newPosY = playerPos.position.y + AlturaCAM;
