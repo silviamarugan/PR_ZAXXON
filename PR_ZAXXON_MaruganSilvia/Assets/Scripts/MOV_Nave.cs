@@ -6,10 +6,10 @@ public class MOV_Nave : MonoBehaviour
 {
 
     Vector3 playerPos = new Vector3(0f, 0.40f, -23f);
-    float speed = 20f;
-
-
-
+    public float speed = 20f;
+    float maxX = 73f;
+    float maxY = 35f;
+    float maxGRND = 1f;
 
 
     // Start is called before the first frame update
@@ -23,8 +23,20 @@ public class MOV_Nave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
 
+
+       //Restriccion en X
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, -maxX, maxX);
+        transform.position = pos;
+        //Fin restriccion X
+
+        //Restriccion en Y
+        pos.y = Mathf.Clamp(pos.y, maxGRND, maxY);
+        transform.position = pos;
+        //Fin restriccion Y
 
 
 
@@ -32,11 +44,12 @@ public class MOV_Nave : MonoBehaviour
         bool dash = false;
         if (Input.GetKey(KeyCode.Space))
         {
+            
             dash = true;
             print("Dash");
             if (dash == true)
             {
-                speed = 30f;
+                speed = 40f;
             }
 
         }
@@ -65,7 +78,7 @@ public class MOV_Nave : MonoBehaviour
             slow = true;
             print("Slow");
             if (slow == true) {
-                speed = 12f; 
+                speed = 8f; 
 
             }
         }
@@ -75,8 +88,6 @@ public class MOV_Nave : MonoBehaviour
         transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal") * speed);
         transform.Translate(Vector3.up * Time.deltaTime * Input.GetAxis("Vertical") * speed);
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        
-
         //FIN MOV NAVE 
     }
 }
