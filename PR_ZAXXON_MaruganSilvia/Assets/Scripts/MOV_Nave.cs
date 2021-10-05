@@ -87,7 +87,7 @@ public class MOV_Nave : MonoBehaviour
         //MOV NAVE
         transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal") * speed);
         transform.Translate(Vector3.up * Time.deltaTime * Input.GetAxis("Vertical") * speed);
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        
         //FIN MOV NAVE 
     }
 }
