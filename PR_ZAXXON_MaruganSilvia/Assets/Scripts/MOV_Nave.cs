@@ -15,6 +15,7 @@ public class MOV_Nave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         transform.position = playerPos;
         speed = 20f;
 
@@ -26,7 +27,7 @@ public class MOV_Nave : MonoBehaviour
 
       
         Renderer rend = GetComponent<Renderer>();
-
+                                                                                   //RESTRICCIONES
         //Restriccion en X
         Vector3 pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, -maxX, maxX);
@@ -37,15 +38,15 @@ public class MOV_Nave : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, maxGRND, maxY);
         transform.position = pos;
         //Fin restriccion Y
-
-                                                                                 // POWER UPS
+                                                                                  //RESTRICCIONES
+                                                                                  // POWER UPS
 
         //DASH (input en "SPACE" y "X" de mando)
         bool dash = false;
         if (Input.GetKey(KeyCode.Space))
         {
-            rend.material.shader = Shader.Find("Highlight");
-            rend.material.SetColor("Highlight", Color.magenta);
+          //  rend.material.shader = Shader.Find("Highlight");
+            // rend.material.SetColor("Highlight", Color.magenta);
             dash = true;
             print("Dash");
             if (dash == true)
@@ -58,8 +59,8 @@ public class MOV_Nave : MonoBehaviour
 
         //ESCUDO (input en "CTRL" y "Y" de mando)
         if (Input.GetKey(KeyCode.LeftControl))
-            rend.material.shader = Shader.Find("Highlight");
-        rend.material.SetColor("Highlight", Color.clear);
+         //   rend.material.shader = Shader.Find("Highlight");
+      //  rend.material.SetColor("Highlight", Color.clear);
         {
             print("Invencibility");
         }
@@ -67,8 +68,8 @@ public class MOV_Nave : MonoBehaviour
 
         //CURA (input en "ALT" y "A" de mando)
         if (Input.GetKey(KeyCode.LeftAlt))
-            rend.material.shader = Shader.Find("Highlight");
-        rend.material.SetColor("Highlight", Color.green);
+        //    rend.material.shader = Shader.Find("Highlight");
+        // rend.material.SetColor("Highlight", Color.green);
         {
             print("HealthUP");
         }
@@ -79,8 +80,8 @@ public class MOV_Nave : MonoBehaviour
        
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            rend.material.shader = Shader.Find("Highlight");
-            rend.material.SetColor("Highlight", Color.blue);
+          //  rend.material.shader = Shader.Find("Highlight");
+          //  rend.material.SetColor("Highlight", Color.blue);
 
             slow = true;
             print("Slow");
