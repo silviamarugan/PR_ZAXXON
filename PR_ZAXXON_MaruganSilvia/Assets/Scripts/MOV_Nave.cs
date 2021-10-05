@@ -10,7 +10,7 @@ public class MOV_Nave : MonoBehaviour
     float maxX = 73f;
     float maxY = 35f;
     float maxGRND = 1f;
-
+   
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +23,11 @@ public class MOV_Nave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
+      
+        Renderer rend = GetComponent<Renderer>();
 
-
-       //Restriccion en X
+        //Restriccion en X
         Vector3 pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, -maxX, maxX);
         transform.position = pos;
@@ -38,13 +38,14 @@ public class MOV_Nave : MonoBehaviour
         transform.position = pos;
         //Fin restriccion Y
 
-
+                                                                                 // POWER UPS
 
         //DASH (input en "SPACE" y "X" de mando)
         bool dash = false;
         if (Input.GetKey(KeyCode.Space))
         {
-            
+            rend.material.shader = Shader.Find("Highlight");
+            rend.material.SetColor("Highlight", Color.magenta);
             dash = true;
             print("Dash");
             if (dash == true)
@@ -57,6 +58,8 @@ public class MOV_Nave : MonoBehaviour
 
         //ESCUDO (input en "CTRL" y "Y" de mando)
         if (Input.GetKey(KeyCode.LeftControl))
+            rend.material.shader = Shader.Find("Highlight");
+        rend.material.SetColor("Highlight", Color.clear);
         {
             print("Invencibility");
         }
@@ -64,6 +67,8 @@ public class MOV_Nave : MonoBehaviour
 
         //CURA (input en "ALT" y "A" de mando)
         if (Input.GetKey(KeyCode.LeftAlt))
+            rend.material.shader = Shader.Find("Highlight");
+        rend.material.SetColor("Highlight", Color.green);
         {
             print("HealthUP");
         }
@@ -74,6 +79,8 @@ public class MOV_Nave : MonoBehaviour
        
         if (Input.GetKey(KeyCode.LeftShift))
         {
+            rend.material.shader = Shader.Find("Highlight");
+            rend.material.SetColor("Highlight", Color.blue);
 
             slow = true;
             print("Slow");
@@ -83,6 +90,8 @@ public class MOV_Nave : MonoBehaviour
             }
         }
         //FIN SLOW
+
+                                                                                 // FIN POWER UPS
 
         //MOV NAVE
         transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal") * speed);
