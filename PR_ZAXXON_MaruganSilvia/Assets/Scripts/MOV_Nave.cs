@@ -26,7 +26,7 @@ public class MOV_Nave : MonoBehaviour
     {
 
       
-        Renderer rend = GetComponent<Renderer>();
+        //Renderer rend = GetComponent<Renderer>();
                                                                                    //RESTRICCIONES
         //Restriccion en X
         Vector3 pos = transform.position;

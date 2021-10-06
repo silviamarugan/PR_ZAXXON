@@ -19,7 +19,14 @@ public class MOV_Cols : MonoBehaviour
     void Update()
     {
         speed = vAR_Global.ColSpeed;
-        transform.Translate(Vector3.back * Time.deltaTime * speed );
+        transform.Translate(Vector3.back * Time.deltaTime * speed);
 
+        float posZ = transform.position.z;
+     
+
+        if (posZ < -20)
+        {
+            Destroy(gameObject);
+        }
     }
 }
