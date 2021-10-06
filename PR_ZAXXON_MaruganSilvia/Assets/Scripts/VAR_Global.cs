@@ -9,7 +9,7 @@ public class VAR_Global : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ColSpeed = 10f; 
+        ColSpeed = 20f; 
     }
 
     // Update is called once per frame

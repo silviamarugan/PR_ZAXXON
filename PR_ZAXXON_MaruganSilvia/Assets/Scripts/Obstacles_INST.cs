@@ -12,7 +12,7 @@ public class Obstacles_INST : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        intervalo = 1f;
+        intervalo = 0.2f;
         StartCoroutine("COLcreator");
         
 
@@ -21,7 +21,7 @@ public class Obstacles_INST : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
     IEnumerator COLcreator()
     {
@@ -29,13 +29,15 @@ public class Obstacles_INST : MonoBehaviour
         {
 
           
-            Vector3 instPOS = new Vector3(Random.Range(-40f, 40f), 0f, initPOS.position.z);
+            Vector3 instPOS = new Vector3(Random.Range(-70f, 70f), Random.Range(5f, 30f), initPOS.position.z);
 
             
 
             Instantiate(Columns, instPOS , Quaternion.identity);
-           
-              yield return new WaitForSeconds(intervalo);
+
+
+            // Quaternion.Euler(Random.Range(0.0f, 360.0f), Random.Range(0.0f, 360.0f), Random.Range(0.0f, 360.0f)) para rotar las columnas. 
+            yield return new WaitForSeconds(intervalo);
         }
           
 

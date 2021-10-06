@@ -20,11 +20,10 @@ public class MOV_Cols : MonoBehaviour
     {
         speed = vAR_Global.ColSpeed;
         transform.Translate(Vector3.back * Time.deltaTime * speed);
-
         float posZ = transform.position.z;
-     
+        print(posZ);
 
-        if (posZ < -20)
+        if (posZ < -40)
         {
             Destroy(gameObject);
         }
