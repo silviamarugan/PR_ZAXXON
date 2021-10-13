@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MOV_Cols : MonoBehaviour
 {
-    [SerializeField] GameObject initOBJ;
+    [SerializeField] GameObject initCol;
     VAR_Global vAR_Global;
     float speed;
     // Start is called before the first frame update
     void Start()
     {
-        initOBJ = GameObject.Find("GlobalVARS");
-        vAR_Global = initOBJ.GetComponent<VAR_Global>();
+        initCol = GameObject.Find("GlobalVARS");
+        vAR_Global = initCol.GetComponent<VAR_Global>();
       
     }
 

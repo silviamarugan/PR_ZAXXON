@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 443902648}
   - component: {fileID: 443902647}
   m_Layer: 0
-  m_Name: COLS_inst
+  m_Name: COLS_gameOBJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -402,6 +402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColSpeed: 10
+  CubeSpeed: 0
+  levelGame: 0
 --- !u!4 &602206226
 Transform:
   m_ObjectHideFlags: 0
