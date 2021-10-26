@@ -26,4 +26,13 @@ public class VAR_Global : MonoBehaviour
         
         }
     }
+    public void Morir() {
+
+        Speed = 0f;
+        Cols_INST cols_INST = //falta rellenar para muerte de la nave, paramos speed, podemos reiniciar el lvl
+
+    
+    
+    
+    }
 }

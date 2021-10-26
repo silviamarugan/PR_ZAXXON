@@ -27,7 +27,13 @@ public class Cols_INST : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+    
+    }
+
+    public void parar() {
+
+        StopCoroutine("COLcreator");
+        StopCoroutine("ROCKcreator");
     }
     IEnumerator COLcreator()
     {
