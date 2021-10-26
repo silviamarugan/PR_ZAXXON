@@ -3,7 +3,8 @@ guid: 9ebc4f08f5e9b884b9e1bf541b804967
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - terrenoPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

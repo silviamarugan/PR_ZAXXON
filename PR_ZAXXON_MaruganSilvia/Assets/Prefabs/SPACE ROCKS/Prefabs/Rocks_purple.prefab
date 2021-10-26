@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4767003598594406885}
   - component: {fileID: 4502431590225891938}
+  - component: {fileID: 5833495800630835860}
   m_Layer: 0
   m_Name: Rocks_purple
   m_TagString: Untagged
@@ -45,6 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initRock: {fileID: 0}
+--- !u!135 &5833495800630835860
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090034803309913650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.45
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7129241299498937214
 PrefabInstance:
   m_ObjectHideFlags: 0
