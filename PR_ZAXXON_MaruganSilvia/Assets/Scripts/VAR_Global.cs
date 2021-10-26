@@ -6,19 +6,24 @@ public class VAR_Global : MonoBehaviour
 {
 
     public float ColSpeed;
-    public float CubeSpeed;
+    public float RockSpeed;
     public int levelGame;
+    public float Speed;
+
     // Start is called before the first frame update
     void Start()
     {
+        Speed = 20;
         ColSpeed = 20f;
-        CubeSpeed = 20f;
+        RockSpeed = 25f;
         levelGame = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Speed > 100) { 
         
+        }
     }
 }
