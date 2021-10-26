@@ -7,7 +7,7 @@ MonoImporter:
   - Columns: {fileID: 3220250616997621214, guid: 3868ef57819e41940bf53b7e9957e34c, type: 3}
   - initPOS: {instanceID: 0}
   executionOrder: 0
-  icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  icon: {instanceID: 0}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

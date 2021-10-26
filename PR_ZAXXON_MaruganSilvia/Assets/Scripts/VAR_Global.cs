@@ -15,7 +15,7 @@ public class VAR_Global : MonoBehaviour
     {
         Speed = 20;
         ColSpeed = 20f;
-        RockSpeed = 25f;
+        RockSpeed = 40f;
         levelGame = 1;
     }
 

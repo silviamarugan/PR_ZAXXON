@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TerrenoMove : MonoBehaviour
+public class Terrain_repeat : MonoBehaviour
 {
     //Velocidad de movimiento que cogeremos de InitGame
     float speed;
