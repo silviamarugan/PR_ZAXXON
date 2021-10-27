@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MOV_Nave : MonoBehaviour
 {
 
@@ -10,7 +11,10 @@ public class MOV_Nave : MonoBehaviour
     float maxX = 73f;
     float maxY = 35f;
     float maxGRND = 1f;
-   
+    [SerializeField] GameObject NAVE;
+  
+    VAR_Global vAR_Global;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +22,8 @@ public class MOV_Nave : MonoBehaviour
        
         transform.position = playerPos;
         speed = 20f;
-
+     
+        vAR_Global = GetComponent<VAR_Global>();
     }
 
     // Update is called once per frame
@@ -99,13 +104,24 @@ public class MOV_Nave : MonoBehaviour
         transform.Translate(Vector3.up * Time.deltaTime * Input.GetAxis("Vertical") * speed);
 
         //FIN MOV NAVE 
+
+
+        //ROT NAVE
+        float rot = Input.GetAxis("Horizontal-J2");
+        transform.Rotate(Vector3.back * Time.deltaTime * rot * 100f);
+        //FIN ROT NAVE
        
+
     }
     private void OnTriggerEnter(Collider other)
     {
        
         if (other.gameObject.layer == 6)
         {
+
+            vAR_Global.SendMessage("Morir");
+            NAVE.SetActive(false);
+
 
             //initGameScript.spaceshipSpeed = 0f;
             //Destroy(gameObject);

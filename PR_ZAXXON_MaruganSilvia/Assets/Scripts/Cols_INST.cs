@@ -43,7 +43,7 @@ public class Cols_INST : MonoBehaviour
             //float rotationVAL = Random.Range(0f, 360f); //rotacion de las columnas 
 
 
-            Vector3 instPOS = new Vector3(Random.Range(-35f, 35f), 17f, initPOS.position.z);
+            Vector3 instPOS = new Vector3(Random.Range(-40f, 40f), 17f, initPOS.position.z);
 
           
             Instantiate(OBS[0], instPOS, Quaternion.identity);
@@ -65,7 +65,7 @@ public class Cols_INST : MonoBehaviour
             // int r = Random.Range(0, OBS.Length);
            
             float rotationVAL = Random.Range(0f, 360f); //rotacion
-            Vector3 instPOS = new Vector3(Random.Range(-35f, 35f), Random.Range(1f, 35f), initPOS.position.z);
+            Vector3 instPOS = new Vector3(Random.Range(-40f, 40f), Random.Range(1f, 35f), initPOS.position.z);
 
 
 

@@ -16,14 +16,14 @@ public class Terrain_repeat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initGameScript = GameObject.Find("InitGame").GetComponent<VAR_Global>();
+        initGameScript = GameObject.Find("vAR_Global").GetComponent<VAR_Global>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //Obtengo la velocidad
-        speed = initGameScript.Speed;
+        speed = VAR_Global.Speed;
         //El terreno se mueve
         transform.Translate(Vector3.back * Time.deltaTime * speed);
 

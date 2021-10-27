@@ -11,7 +11,7 @@ public class MOV_Cols : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initCol = GameObject.Find("GlobalVARS");
+        initCol = GameObject.Find("vAR_Global");
         vAR_Global = initCol.GetComponent<VAR_Global>();
       
     }

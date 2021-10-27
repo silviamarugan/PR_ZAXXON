@@ -29,15 +29,15 @@ public class INST_Generator : MonoBehaviour
     float speed;
 
     //Variable que me permitirá acceder al componente con las variables generales
-    VAR_Global initGameScript;
+    VAR_Global vAR_Global;
 
     void Start()
     {
         //Accedo al componente del Game Object. En este ejemplo, lo hago todo en una sola línea
-        initGameScript = GameObject.Find("VAR_Global").GetComponent<VAR_Global>();
+        vAR_Global = GameObject.Find("VAR_Global").GetComponent<VAR_Global>();
 
         distanciaEntreObstaculos = 30f;
-        intervalo = distanciaEntreObstaculos / initGameScript.Speed;
+        intervalo = distanciaEntreObstaculos / VAR_Global.Speed;
 
         //Llamo al método que crea columnas iniciales
         CrearColumnasIniciales();
@@ -67,7 +67,7 @@ public class INST_Generator : MonoBehaviour
             //Creo el número aleatorio para elegir el prefab del Array
             int randomNum;
             //Obtengo el nivel en el que estamos (en cada vuelta de la corrutina)
-            level = initGameScript.levelGame;
+            level = vAR_Global.levelGame;
             //print(level);
             //Según el nivel, instancio unos u otros obstáculos
             if (level == 0)
@@ -97,7 +97,7 @@ public class INST_Generator : MonoBehaviour
             */
 
             //Antes de instanciar calculo el intervalo en basde a la velocidad
-            intervalo = distanciaEntreObstaculos / initGameScript.Speed;
+            intervalo = distanciaEntreObstaculos / VAR_Global.Speed;
             //print(intervalo);
 
             //Instancio el prefab aleatorio en la posición calculada

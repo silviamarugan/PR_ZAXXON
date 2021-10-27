@@ -11,7 +11,7 @@ public class MOV_Rocks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initRock = GameObject.Find("GlobalVARS");
+        initRock = GameObject.Find("vAR_Global");
         vAR_Global = initRock.GetComponent<VAR_Global>();
 
     }
