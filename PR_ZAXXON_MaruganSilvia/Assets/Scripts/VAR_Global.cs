@@ -11,10 +11,10 @@ public class VAR_Global : MonoBehaviour
     public float RockSpeed;
     public int levelGame;
    static public float Speed;
-    static float score;
+    static float scorepoints;
     public bool alive;
     [SerializeField] float maxSpeed;
-    [SerializeField] Text scoreText;
+    [SerializeField] Text score;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class VAR_Global : MonoBehaviour
       //  score = 000000000;
         maxSpeed = 100f;
         alive = true;
-        scoreText.text = "000" + score + "points";
+      
         int y = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -38,9 +38,9 @@ public class VAR_Global : MonoBehaviour
 
         float time = Time.time;
      //   print(Mathf.Round(time));
-        score = Mathf.Round(time) * Speed;
-        print(Mathf.Round(score));
-
+        scorepoints = Mathf.Round(time) * Speed;
+        print(Mathf.Round(scorepoints));
+        score.text = "000" + scorepoints + "points";
 
     }
     public void Morir() {
