@@ -81,19 +81,19 @@ public class MOV_Nave : MonoBehaviour
         //FIN CURA
 
         //SLOW (input en "CTRL" y "B" de mando)
-        bool slow = false;
+       // bool slow = false;
        
-        if (Input.GetKey(KeyCode.LeftShift))
+       // if (Input.GetKey(KeyCode.LeftShift))
         {
           //  rend.material.shader = Shader.Find("Highlight");
           //  rend.material.SetColor("Highlight", Color.blue);
 
-            slow = true;
-            print("Slow");
-            if (slow == true) {
-                speed = 8f; 
+         //   slow = true;
+       //     print("Slow");
+       //     if (slow == true) {
+        //        speed = 8f; 
 
-            }
+      //      }
         }
         //FIN SLOW
 
