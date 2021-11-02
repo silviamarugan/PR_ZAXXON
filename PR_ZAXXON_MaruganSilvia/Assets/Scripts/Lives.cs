@@ -34,7 +34,7 @@ public class Lives : MonoBehaviour
             lives.sprite = livesArray[spritepos];
 
         }
-        else if(vidas < 0) {
+        else {
 
             print("muerte");
         }

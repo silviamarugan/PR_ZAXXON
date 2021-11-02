@@ -15,13 +15,15 @@ public class VAR_Global : MonoBehaviour
     public bool alive;
     [SerializeField] float maxSpeed;
     [SerializeField] Text score;
+
+    [SerializeField] Text levelText;
     // Start is called before the first frame update
     void Start()
     {
         Speed = 30;
         ColSpeed = 40f;
         RockSpeed = 50f;
-        levelGame = 1;
+        levelGame = 0;
       //  score = 000000000;
         maxSpeed = 100f;
         alive = true;
@@ -39,16 +41,29 @@ public class VAR_Global : MonoBehaviour
         float time = Time.time;
      //   print(Mathf.Round(time));
         scorepoints = Mathf.Round(time) * Speed;
-        print(Mathf.Round(scorepoints));
-        score.text = "000" + scorepoints + "points";
 
+        levelText.text = "NIVEL: " + levelGame.ToString();
+
+        score.text = "000" + (Mathf.Round(scorepoints)) + " points";
+        if (scorepoints > 500 && scorepoints < 1000)
+        {
+            levelGame = 1;
+        }
+        else if (scorepoints > 1000)
+        {
+            levelGame = 2;
+        }
     }
     public void Morir() {
 
         Speed = 0f;
         Cols_INST cols_INST = GameObject.Find("Cols_INST").GetComponent<Cols_INST>();
-        cols_INST.SendMessage("Parar");//falta rellenar para muerte de la nave, paramos speed, podemos reiniciar el lvl
+        cols_INST.SendMessage("Parar"); alive = false;
+        Speed = 0f;
+        Cols_INST instanciadorObst = GameObject.Find("OBS").GetComponent<Cols_INST>();
+        instanciadorObst.SendMessage("Parar");
 
+       
 
         SceneManager.LoadScene(2);
 

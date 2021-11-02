@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Scene_Swap : MonoBehaviour
 {
@@ -17,7 +18,10 @@ public class Scene_Swap : MonoBehaviour
     }
     public void IniciarJuego()
     {
-       
+        if (Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene(1);
+        }
 
     }
 }
