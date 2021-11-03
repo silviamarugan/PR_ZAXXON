@@ -119,12 +119,12 @@ public class MOV_Nave : MonoBehaviour
         if (other.gameObject.layer == 6)
         {
 
-            vAR_Global.SendMessage("Morir");
-            NAVE.SetActive(false);
+            vAR_Global.SendMessage("Chocar");
+           // NAVE.SetActive(false);
 
 
-            //initGameScript.spaceshipSpeed = 0f;
-            //Destroy(gameObject);
+            VAR_Global.Speed = 0f;
+           
 
         }
     }

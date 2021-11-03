@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - terrenoPrefab: {instanceID: 0}
+  - terrenoPrefab: {fileID: 1122374820567920345, guid: bb4a513e0a482c84abe2332de74df452, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

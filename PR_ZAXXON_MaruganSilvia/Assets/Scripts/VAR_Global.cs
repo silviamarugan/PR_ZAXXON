@@ -23,7 +23,7 @@ public class VAR_Global : MonoBehaviour
         Speed = 30;
         ColSpeed = 40f;
         RockSpeed = 50f;
-        levelGame = 0;
+      //  levelGame = 0;
       //  score = 000000000;
         maxSpeed = 100f;
         alive = true;
@@ -42,30 +42,30 @@ public class VAR_Global : MonoBehaviour
      //   print(Mathf.Round(time));
         scorepoints = Mathf.Round(time) * Speed;
 
-        levelText.text = "NIVEL: " + levelGame.ToString();
+       // levelText.text = "NIVEL: " + levelGame.ToString();
 
         score.text = "000" + (Mathf.Round(scorepoints)) + " points";
         if (scorepoints > 500 && scorepoints < 1000)
         {
-            levelGame = 1;
+           // levelGame = 1;
         }
         else if (scorepoints > 1000)
         {
-            levelGame = 2;
+           // levelGame = 2;
         }
     }
     public void Morir() {
-
+        alive = false;
         Speed = 0f;
         Cols_INST cols_INST = GameObject.Find("Cols_INST").GetComponent<Cols_INST>();
-        cols_INST.SendMessage("Parar"); alive = false;
-        Speed = 0f;
-        Cols_INST instanciadorObst = GameObject.Find("OBS").GetComponent<Cols_INST>();
-        instanciadorObst.SendMessage("Parar");
+        cols_INST.SendMessage("Parar");
+        
+        GameObject.Find("Nave_pref").SetActive(false);
 
-       
+
 
         SceneManager.LoadScene(2);
 
     }
+    
 }
