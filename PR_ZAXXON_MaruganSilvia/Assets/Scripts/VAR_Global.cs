@@ -67,5 +67,15 @@ public class VAR_Global : MonoBehaviour
         SceneManager.LoadScene(2);
 
     }
-    
+    public void Invencibility() {
+
+        Invoke("PararInvencib", 3f);
+
+    }
+    void PararInvencib()
+    {
+
+
+
+    }
 }
