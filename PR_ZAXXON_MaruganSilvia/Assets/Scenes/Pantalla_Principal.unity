@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.019929983, g: 0.10488532, b: 0.2910173, a: 1}
+  m_IndirectSpecularColor: {r: 0.019919997, g: 0.10488362, b: 0.29100463, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -218,8 +218,8 @@ RectTransform:
   - {fileID: 1919091950}
   - {fileID: 1041998416}
   - {fileID: 2025546961}
-  - {fileID: 1481788886}
   - {fileID: 1670278990}
+  - {fileID: 1481788886}
   - {fileID: 127957555}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 127957555}
   - component: {fileID: 127957557}
   - component: {fileID: 127957556}
+  - component: {fileID: 127957558}
   m_Layer: 5
   m_Name: logo_home
   m_TagString: Untagged
@@ -316,6 +317,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127957554}
   m_CullTransparentMesh: 1
+--- !u!95 &127957558
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127957554}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1daa41390093c4245b23fd0d71c5d53e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &838082866
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +486,7 @@ GameObject:
   - component: {fileID: 1041998419}
   - component: {fileID: 1041998418}
   - component: {fileID: 1041998417}
+  - component: {fileID: 1041998420}
   m_Layer: 5
   m_Name: play
   m_TagString: Untagged
@@ -574,6 +595,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041998415}
   m_CullTransparentMesh: 0
+--- !u!95 &1041998420
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041998415}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26cf0501a1b7e644295b76f7a28db83f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1173380232
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +775,7 @@ GameObject:
   - component: {fileID: 1481788889}
   - component: {fileID: 1481788888}
   - component: {fileID: 1481788887}
+  - component: {fileID: 1481788890}
   m_Layer: 5
   m_Name: 'EXIT '
   m_TagString: Untagged
@@ -754,7 +795,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 8776431}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -843,6 +884,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481788885}
   m_CullTransparentMesh: 1
+--- !u!95 &1481788890
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481788885}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed77c12e5d35e2c4fa8a345101a50f71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1670278989
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +915,7 @@ GameObject:
   - component: {fileID: 1670278993}
   - component: {fileID: 1670278992}
   - component: {fileID: 1670278991}
+  - component: {fileID: 1670278994}
   m_Layer: 5
   m_Name: HIGHSCORES
   m_TagString: Untagged
@@ -874,7 +935,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 8776431}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -963,6 +1024,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670278989}
   m_CullTransparentMesh: 1
+--- !u!95 &1670278994
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670278989}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e882997074633e74b9a5f06c8f683bcf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1919091949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1130,7 @@ GameObject:
   - component: {fileID: 2025546964}
   - component: {fileID: 2025546963}
   - component: {fileID: 2025546962}
+  - component: {fileID: 2025546965}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -1158,3 +1239,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025546960}
   m_CullTransparentMesh: 1
+--- !u!95 &2025546965
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025546960}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dcc3860a650f7a4fb6597af4dda2af5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
