@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.019919997, g: 0.10488362, b: 0.29100463, a: 1}
+  m_IndirectSpecularColor: {r: 0.019929983, g: 0.10488532, b: 0.2910173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: -6766042299080685929, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_PressedSprite: {fileID: 3173016978234676787, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: -6766042299080685929, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 4326647531174518853, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_PressedSprite: {fileID: -5509688615580004225, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 4326647531174518853, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -912,7 +912,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 4370719095374507910, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_PressedSprite: {fileID: 1735342637885407142, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 4370719095374507910, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 743059956788912552, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_PressedSprite: {fileID: 8846934851473086591, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 743059956788912552, guid: 5a380339d3ec43e41b29939b20876feb, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
