@@ -28,6 +28,10 @@ public class VAR_Global : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
+
+
         currlives = maxlives;
         Speed = 30;
         ColSpeed = 40f;
@@ -91,7 +95,14 @@ public class VAR_Global : MonoBehaviour
 
 
     }
+    void MostrarGameOver()
+    {
+        //Muestro el menú GameOver
+        GameOverCanvas.enabled = true;
+        //Selecciono el botón de volver
 
+        
+    }
     public void Chocar()
     {
         if (alive == true)

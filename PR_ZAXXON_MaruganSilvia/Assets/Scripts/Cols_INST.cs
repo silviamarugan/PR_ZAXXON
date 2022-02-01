@@ -10,19 +10,19 @@ public class Cols_INST : MonoBehaviour
     [SerializeField] Transform initPOS;
     float intervalo01;
     float intervalo02;
-    float intervalo03;
+   
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-        intervalo01 = 0.3f;
-        intervalo02 = 0.2f;
-        intervalo03 = 0.8f;
+        intervalo01 = 0.4f;
+        intervalo02 = 0.6f;
+        
         StartCoroutine("COLcreator");
         StartCoroutine("ROCKcreator");
-        StartCoroutine("COL02creator");
+       
 
 
     }
@@ -38,7 +38,7 @@ public class Cols_INST : MonoBehaviour
 
         StopCoroutine("COLcreator");
         StopCoroutine("ROCKcreator");
-        StartCoroutine("COL02creator");
+        
     }
     IEnumerator COLcreator()
     {
@@ -63,25 +63,7 @@ public class Cols_INST : MonoBehaviour
 
 
 
-    IEnumerator COL02creator()
-    {
-        while (true)
-        {
-            int r = Random.Range(0, OBS.Length);
-            float rotationVAL = Random.Range(0f, 360f); //rotacion de las columnas 
-
-
-            Vector3 instPOS = new Vector3(Random.Range(-40f, 40f), 17f, initPOS.position.z);
-
-
-            Instantiate(OBS[0], instPOS, Quaternion.Euler(Random.Range(0.0f, 0.0f), Random.Range(0.0f, 0.0f), Random.Range(0.0f, 360.0f)));
-
-            //   para rotar las columnas. 
-            yield return new WaitForSeconds(intervalo03);
-
-        }
-
-    }
+   
 
 
     IEnumerator ROCKcreator()
@@ -90,8 +72,8 @@ public class Cols_INST : MonoBehaviour
             {
                 // int r = Random.Range(0, OBS.Length);
 
-                float rotationVAL = Random.Range(0f, 360f); //rotacion
-                Vector3 instPOS = new Vector3(Random.Range(-40f, 40f), Random.Range(1f, 35f), initPOS.position.z);
+                float rotationVAL = Random.Range(0f, 180f); //rotacion
+                Vector3 instPOS = new Vector3(Random.Range(-20f, 20f), Random.Range(10f, 35f), initPOS.position.z);
 
 
 

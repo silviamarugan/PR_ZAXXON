@@ -107,10 +107,7 @@ public class MOV_Nave : MonoBehaviour
         //FIN MOV NAVE 
 
 
-        //ROT NAVE
-     //   float rot = Input.GetAxis("Horizontal-J2");
-       // transform.Rotate(Vector3.back * Time.deltaTime * rot * 100f);
-        //FIN ROT NAVE
+       
        
 
     }
