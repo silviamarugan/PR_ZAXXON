@@ -14,16 +14,17 @@ public class MOV_Nave : MonoBehaviour
     [SerializeField] GameObject NAVE;
   
     VAR_Global vAR_Global;
-
+    GameObject varOBJ;
 
     // Start is called before the first frame update
     void Start()
     {
        
         transform.position = playerPos;
-        speed = 20f;
-     
-        vAR_Global = GetComponent<VAR_Global>();
+        speed = 40f;
+
+        varOBJ = GameObject.Find("vAR_Global");
+        vAR_Global = varOBJ.GetComponent<VAR_Global>();
     }
 
     // Update is called once per frame
@@ -107,8 +108,8 @@ public class MOV_Nave : MonoBehaviour
 
 
         //ROT NAVE
-        float rot = Input.GetAxis("Horizontal-J2");
-        transform.Rotate(Vector3.back * Time.deltaTime * rot * 100f);
+     //   float rot = Input.GetAxis("Horizontal-J2");
+       // transform.Rotate(Vector3.back * Time.deltaTime * rot * 100f);
         //FIN ROT NAVE
        
 
@@ -119,11 +120,11 @@ public class MOV_Nave : MonoBehaviour
         if (other.gameObject.layer == 6)
         {
 
-            vAR_Global.SendMessage("Chocar");
-           // NAVE.SetActive(false);
+            //  vAR_Global.SendMessage("Chocar", other.gameObject);
+            // NAVE.SetActive(false);
 
 
-            VAR_Global.Speed = 0f;
+            vAR_Global.Chocar();
            
 
         }

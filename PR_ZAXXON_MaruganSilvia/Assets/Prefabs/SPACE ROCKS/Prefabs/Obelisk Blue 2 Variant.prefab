@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 167872, guid: 4f4063561a2d9a84786be0389aae9d5b, type: 3}
       propertyPath: m_Name
-      value: Obelisk Blue 2
+      value: Obelisk Blue 2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 167872, guid: 4f4063561a2d9a84786be0389aae9d5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 475546, guid: 4f4063561a2d9a84786be0389aae9d5b, type: 3}
       propertyPath: m_RootOrder

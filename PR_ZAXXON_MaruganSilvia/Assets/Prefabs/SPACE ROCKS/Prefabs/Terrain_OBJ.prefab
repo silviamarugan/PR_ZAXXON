@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8272762224333451433}
   - component: {fileID: 1054314081613337493}
   - component: {fileID: 4071281538442987644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4369700122368439156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain_OBJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,13 +13,22 @@ public class VAR_Global : MonoBehaviour
    static public float Speed;
     static float scorepoints;
     public bool alive;
+    GameObject GameOver;
+    Canvas GameOverCanvas;
     [SerializeField] float maxSpeed;
     [SerializeField] Text score;
+
+
+    [SerializeField] Image lives;
+    [SerializeField] Sprite[] livesArray = new Sprite[6];
+    private int maxlives = 6;
+    public int currlives;
 
     [SerializeField] Text levelText;
     // Start is called before the first frame update
     void Start()
     {
+        currlives = maxlives;
         Speed = 30;
         ColSpeed = 40f;
         RockSpeed = 50f;
@@ -29,6 +38,12 @@ public class VAR_Global : MonoBehaviour
         alive = true;
       
         int y = SceneManager.GetActiveScene().buildIndex;
+
+
+
+        maxlives = livesArray.Length;
+        lives.sprite = livesArray[currlives];
+
     }
 
     // Update is called once per frame
@@ -53,20 +68,54 @@ public class VAR_Global : MonoBehaviour
         {
            // levelGame = 2;
         }
+       
+
     }
     public void Morir() {
         alive = false;
         Speed = 0f;
         Cols_INST cols_INST = GameObject.Find("Cols_INST").GetComponent<Cols_INST>();
         cols_INST.SendMessage("Parar");
-        
-        GameObject.Find("Nave_pref").SetActive(false);
+       
+       
+        //Desactivo el Grupo que contiene la nave
+        GameObject.Find("NAVE").SetActive(false);
+
+        Invoke("MostrarGameOver", 2f);
+
+      
 
 
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
+
 
     }
+
+    public void Chocar()
+    {
+        if (alive == true)
+        {
+            currlives--;
+            //print("hit");
+            if (currlives > 0)
+            {
+              
+                lives.sprite = livesArray[currlives];
+            }
+            else
+            {
+                alive = false;
+                Morir();
+
+
+            }
+
+
+        }
+    }
+
+
     public void Invencibility() {
 
         Invoke("PararInvencib", 3f);

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4767003598594406885}
   - component: {fileID: 4502431590225891938}
   - component: {fileID: 5833495800630835860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rocks_purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,25 +66,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4767003598594406885}
     m_Modifications:
+    - target: {fileID: 128318, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 140212, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 142510, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
       propertyPath: m_Name
       value: Glowing Rock Purple 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 142510, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5245
+      objectReference: {fileID: 0}
+    - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5245
+      objectReference: {fileID: 0}
+    - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5245
+      objectReference: {fileID: 0}
+    - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.066731
       objectReference: {fileID: 0}
     - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.014828
       objectReference: {fileID: 0}
     - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.028839
       objectReference: {fileID: 0}
     - target: {fileID: 421196, guid: 166e2af65c6c46a44ad3eb729b2c1843, type: 3}
       propertyPath: m_LocalRotation.w
