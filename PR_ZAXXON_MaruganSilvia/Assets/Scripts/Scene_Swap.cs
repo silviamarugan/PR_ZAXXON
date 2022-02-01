@@ -18,7 +18,7 @@ public class Scene_Swap : MonoBehaviour
     }
     public void IniciarJuego()
     {
-        if (Input.GetKey("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             SceneManager.LoadScene(1);
         }

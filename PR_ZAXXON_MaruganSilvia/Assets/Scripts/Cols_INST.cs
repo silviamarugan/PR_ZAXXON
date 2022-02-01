@@ -74,7 +74,7 @@ public class Cols_INST : MonoBehaviour
             Vector3 instPOS = new Vector3(Random.Range(-40f, 40f), 17f, initPOS.position.z);
 
 
-            Instantiate(OBS[0], instPOS, Quaternion.Euler(Random.Range(0.0f, 360.0f), Random.Range(0.0f, 360.0f), Random.Range(0.0f, 180.0f)));
+            Instantiate(OBS[0], instPOS, Quaternion.Euler(Random.Range(0.0f, 0.0f), Random.Range(0.0f, 0.0f), Random.Range(0.0f, 360.0f)));
 
             //   para rotar las columnas. 
             yield return new WaitForSeconds(intervalo03);
