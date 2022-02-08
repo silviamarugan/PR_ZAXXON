@@ -49,7 +49,7 @@ public class MOV_Nave : MonoBehaviour
 
         //DASH (input en "SPACE" y "X" de mando)
         bool dash = false;
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetButton("Fire1"))
         {
           //  rend.material.shader = Shader.Find("Highlight");
             // rend.material.SetColor("Highlight", Color.magenta);
@@ -57,14 +57,14 @@ public class MOV_Nave : MonoBehaviour
             print("Dash");
             if (dash == true)
             {
-                speed = 40f;
+                speed = 80f;
             }
 
         }
         //FIN DASH 
 
         //ESCUDO (input en "CTRL" y "Y" de mando)
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetButton("Fire2"))
          //   rend.material.shader = Shader.Find("Highlight");
       //  rend.material.SetColor("Highlight", Color.clear);
         {

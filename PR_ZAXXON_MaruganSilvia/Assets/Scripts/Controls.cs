@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Scene_Swap : MonoBehaviour
+public class Controls : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,13 +14,10 @@ public class Scene_Swap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public void IniciarJuego()
-    {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Restart"))
         {
-            SceneManager.LoadScene(2);
+            // print("funciona");
+            SceneManager.LoadScene(0);
         }
 
     }

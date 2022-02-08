@@ -78,30 +78,30 @@ public class VAR_Global : MonoBehaviour
     public void Morir() {
         alive = false;
         Speed = 0f;
-        Cols_INST cols_INST = GameObject.Find("Cols_INST").GetComponent<Cols_INST>();
-        cols_INST.SendMessage("Parar");
+        Cols_INST cols_INST = GameObject.Find("COLS_gameOBJ").GetComponent<Cols_INST>();
+       cols_INST.SendMessage("Parar");
        
        
         //Desactivo el Grupo que contiene la nave
         GameObject.Find("NAVE").SetActive(false);
 
-        Invoke("MostrarGameOver", 2f);
+         Invoke("MostrarGameOver", 2f);
 
-      
+      //  SceneManager.LoadScene(5);
 
 
 
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(2);
 
 
     }
     void MostrarGameOver()
     {
         //Muestro el menú GameOver
-        GameOverCanvas.enabled = true;
+        SceneManager.LoadScene(5);
         //Selecciono el botón de volver
 
-        
+
     }
     public void Chocar()
     {

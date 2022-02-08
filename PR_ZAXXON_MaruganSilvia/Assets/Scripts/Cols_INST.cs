@@ -33,7 +33,7 @@ public class Cols_INST : MonoBehaviour
 
     }
 
-    public void parar()
+    public void Parar()
     {
 
         StopCoroutine("COLcreator");
