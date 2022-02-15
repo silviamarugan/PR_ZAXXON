@@ -19,6 +19,7 @@ public class PasarACreditos : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+       // print(other.gameObject.name);
         if (other.gameObject.tag == "NAVE") {
 
             SceneManager.LoadScene("Creditos", LoadSceneMode.Single);

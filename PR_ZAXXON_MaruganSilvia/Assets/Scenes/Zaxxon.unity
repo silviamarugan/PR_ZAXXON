@@ -5683,6 +5683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarSparrow11
       objectReference: {fileID: 0}
+    - target: {fileID: 1664269169174470, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
+      propertyPath: m_TagString
+      value: NAVE
+      objectReference: {fileID: 0}
     - target: {fileID: 4465035140963908, guid: 5a073d16030e9bb4ab4bab71c3124066, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12190,7 +12194,7 @@ GameObject:
   - component: {fileID: 693008816}
   m_Layer: 0
   m_Name: NAVE
-  m_TagString: Untagged
+  m_TagString: NAVE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12625,7 +12629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718834346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.9, y: 0, z: 58.6}
+  m_LocalPosition: {x: -35.9, y: 2.1, z: 1022.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
