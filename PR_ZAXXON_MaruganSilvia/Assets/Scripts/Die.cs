@@ -21,6 +21,11 @@ public class Die : MonoBehaviour
            // print("funciona");
             SceneManager.LoadScene(1);
         }
+        else if (Input.GetButtonDown("Cargar"))
+        {
+            // print("funciona");
+            SceneManager.LoadScene(0);
+        }
 
     }
    
