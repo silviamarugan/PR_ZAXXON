@@ -19,7 +19,7 @@ public class Die : MonoBehaviour
         if (Input.GetButtonDown("Restart"))
         {
            // print("funciona");
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
 
     }
