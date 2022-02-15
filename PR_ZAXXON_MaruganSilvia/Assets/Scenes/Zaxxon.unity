@@ -11280,7 +11280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1324d40d6e4b74db74c503d672d5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColSpeed: 10
+  ColSpeed: 9.24
   RockSpeed: 0
   levelGame: 0
   alive: 1
