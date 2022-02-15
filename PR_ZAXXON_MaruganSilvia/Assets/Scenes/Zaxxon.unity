@@ -11296,6 +11296,7 @@ MonoBehaviour:
   - {fileID: 9027665280695963352, guid: 383ba11f4afdb67479d191b559ede2f0, type: 3}
   - {fileID: -5803908649243731688, guid: 383ba11f4afdb67479d191b559ede2f0, type: 3}
   currlives: 0
+  explosion_pre: {fileID: 5754906678919880198, guid: 968919ffcb800c647a437dbb12509941, type: 3}
   levelText: {fileID: 1244126045}
 --- !u!4 &602206226
 Transform:

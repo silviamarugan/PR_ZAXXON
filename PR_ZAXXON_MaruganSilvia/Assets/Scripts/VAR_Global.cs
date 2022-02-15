@@ -24,6 +24,9 @@ public class VAR_Global : MonoBehaviour
     private int maxlives = 6;
     public int currlives;
 
+
+    [SerializeField] GameObject explosion_pre;
+
     [SerializeField] Text levelText;
     // Start is called before the first frame update
     void Start()
@@ -81,11 +84,16 @@ public class VAR_Global : MonoBehaviour
         Cols_INST cols_INST = GameObject.Find("COLS_gameOBJ").GetComponent<Cols_INST>();
        cols_INST.SendMessage("Parar");
        
-       
+
+        
+
+        Transform posicionNave = GameObject.Find("NAVE").transform;
+        Instantiate(explosion_pre, posicionNave.position, Quaternion.identity);
+
         //Desactivo el Grupo que contiene la nave
         GameObject.Find("NAVE").SetActive(false);
 
-         Invoke("MostrarGameOver", 2f);
+        Invoke("MostrarGameOver", 2f);
 
       //  SceneManager.LoadScene(5);
 
